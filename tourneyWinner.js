@@ -37,8 +37,3 @@ function tournamentWinner(competitions, results){
 }
 
 // ON time and OK space, could be done better 
-
-function better(competitions, results){
-  let currentBestTeam = '';
-  let scores = {[]}
-}
