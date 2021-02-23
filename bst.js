@@ -1,5 +1,5 @@
 function findClosestValueInBst(tree,target){
-  let closest = 0 
+  let closest = tree.value;
   let currNode = tree;
   while (currNode !== null){
     if (Math.abs(target - closest) > Math.abs(target - currNode.value)){
