@@ -12,8 +12,8 @@ function findClosestValueInBst(tree,target){
     } else {
       break;
     }
-    return closest;
-  }
+  } 
+  return closest;
 }
 
 // ON and O1
