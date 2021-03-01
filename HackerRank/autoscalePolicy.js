@@ -24,7 +24,7 @@ function finalInstances2(instances, averageUtil){
     if (num < 25){
       currentInstances = Math.ceil(currentInstances / 2);
       i += 10;
-    } else if (ele > 60 && currentInstances <= ( 2 * Math.pow(10,8))){
+    } else if (ele > 60 && (currentInstances * 2) <= ( 2 * Math.pow(10,8))){
       currentInstances = (2 * currentInstances);
       i += 10;
     } else {
