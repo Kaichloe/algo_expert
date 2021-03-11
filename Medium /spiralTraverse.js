@@ -3,7 +3,7 @@ function spiralTraverse(array){
   let startRow = 0;
   let endRow = array.length - 1;
   let startCol = 0;
-  let endCol = array.length - 1;
+  let endCol = array[0].length - 1;
 
   while (startRow <= endRow && startCol <= endCol){
     for (let col = startCol; col <= endCol; col++) {
@@ -29,5 +29,5 @@ function spiralTraverse(array){
     endCol--;
   }
 
-  return results;
+  return result;
 }
