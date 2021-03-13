@@ -20,7 +20,7 @@ function finalInstances2(instances, averageUtil){
 
   while (i < averageUtil.length){
     let num = averageUtil[i];
-                                                                                                                
+    
     if (num < 25){
       currentInstances = Math.ceil(currentInstances / 2);
       i += 10;

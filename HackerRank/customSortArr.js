@@ -25,3 +25,22 @@ function moves(arr) {
     
     return minMoves;
 }
+
+// can do two pointer method too
+
+function moves(arr){
+    let count = 0;
+    let evenPointer = arr.length - 1;
+    let oddPointer = 0;
+
+    while (oddPointer < evenPointer){
+        while(arr[oddPointer] % 2 === 0) oddPointer++;
+        while(arr[evenPointer] % 2 !== 0) evenPointer--;
+        if (oddPointer < evenPointer){
+            count++;
+        }
+        oddPointer++;
+        evenPointer--;
+    }
+    return count;
+}

@@ -87,44 +87,4 @@ contains(value) {
   }
 }
 
-[
-  {
-    "arguments": [5],
-    "method": "insert",
-    "output": null,
-    "tree": {
-      "nodes": [
-        {"id": "10", "left": "5", "right": null, "value": 10},
-        {"id": "5", "left": null, "right": null, "value": 5}
-      ],
-      "root": "10"
-    }
-  },
-  {
-    "arguments": [15],
-    "method": "insert",
-    "output": null,
-    "tree": {
-      "nodes": [
-        {"id": "10", "left": "5", "right": "15", "value": 10},
-        {"id": "15", "left": null, "right": null, "value": 15},
-        {"id": "5", "left": null, "right": null, "value": 5}
-      ],
-      "root": "10"
-    }
-  },
-  {
-    "arguments": [2],
-    "method": "insert",
-    "output": null,
-    "tree": {
-      "nodes": [
-        {"id": "10", "left": "5", "right": "15", "value": 10},
-        {"id": "15", "left": null, "right": null, "value": 15},
-        {"id": "5", "left": "2", "right": null, "value": 5},
-        {"id": "2", "left": null, "right": null, "value": 2}
-      ],
-      "root": "10"
-    }
-  },
-  {
+
