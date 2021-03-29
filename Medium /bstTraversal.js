@@ -34,3 +34,5 @@ function postOrderTraverse(tree, array) {
   }
   return array;
 }
+
+// all ON and ON where N is # of nodes 
