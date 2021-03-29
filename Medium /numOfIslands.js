@@ -42,7 +42,7 @@ function numOfislands(grid){
       }
     }
   }
-return islands;
+  return islands;
 }
 
 function checkAround(i,j, grid){
