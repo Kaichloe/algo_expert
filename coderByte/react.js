@@ -46,7 +46,6 @@ function PhoneBookForm({ addEntryToPhoneBook }) {
 
   const handleInputChange = e => {
     e.preventDefault();
-
   }
 
   return (
