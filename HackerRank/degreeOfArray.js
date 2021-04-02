@@ -18,3 +18,21 @@ function degreeOfArray(arr){
   }
   return shortest
 }
+
+
+function degreeOfArray(arr){
+  let countHash = {};
+  let firstOccurance = {};
+  let lastOccurance = {};
+  let max = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    let num = arr[i];
+    if (!countHash[num]) countHash[num] = 0;
+    countHash[num] += 1;
+    max = Math.max(max, countHash[num]);
+    if(!(num in firstOccurance)) firstOccurance[num] = i;
+    lastOccurance[num] = i
+  }
+  
+}
