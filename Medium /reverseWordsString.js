@@ -8,15 +8,22 @@ function reverseWordsInString(string) {
   debugger
 
   let reversed = "";
-  let end = string.length - 1;
+  let end = string.length;
   
-  for (let i = end; i <= 0; i--) {
+  for (let i = end - 1; i >= 0; i--) {
     let current = string[i];
     if (current === " "){
-      let currentWord = string.slice(i+1);
+      let currentWord = string.slice(i+1, end);
       reversed += (currentWord + " ");
+      let end = i;
+    }
+    if (i === 0){
+      let currentWord = string.slice(i, end);
+      reversed += currentWord;
     }
   }
 
   return reversed;
 }
+
+//ON and ON. reversed is going to hold equal to length of string
