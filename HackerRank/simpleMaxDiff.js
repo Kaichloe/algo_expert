@@ -29,5 +29,22 @@ function maxDifference(px){
 //too slow only 4/9 
 
   function maxDifference(px){
+    let min = Math.max(...px);
+    let profit = 0;
 
+    px.forEach(val => {
+      if (val < min){
+        min = val;
+      } else if (val - min > profit){
+        profit = val - min;
+      }
+    })
+
+    if (profit === 0){
+      return -1;
+    }
+
+    return profit;
   }
+
+  //correct way to do this;
